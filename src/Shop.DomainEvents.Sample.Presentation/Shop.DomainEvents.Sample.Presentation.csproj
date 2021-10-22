@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shop.DomainEvents.Sample.Core\Shop.DomainEvents.Sample.Core.csproj" />
+    <ProjectReference Include="..\Shop.DomainEvents.Sample.ApplicationService\Shop.DomainEvents.Sample.ApplicationService.csproj" />
+    <ProjectReference Include="..\Shop.DomainEvents.Sample.Infrastructure.IoC\Shop.DomainEvents.Sample.Infrastructure.IoC.csproj" />
+    <ProjectReference Include="..\Shop.DomainEvents.Sample.Infrastructure\Shop.DomainEvents.Sample.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
