@@ -10,7 +10,7 @@ namespace Shop.DomainEvents.Sample.ApplicationService.DomainEventsHandlers.Order
     {
         public async Task Handle(OrderStartedEvent notification, CancellationToken cancellationToken)
         {
-            Console.WriteLine($"Order Started Handle: {notification.Order.Id}");
+            Console.WriteLine($"Started Handle: {notification.Order.Id}");
 
             await Task.FromResult(0);
         }

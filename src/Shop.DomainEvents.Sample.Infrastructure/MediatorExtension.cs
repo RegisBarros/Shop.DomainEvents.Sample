@@ -16,11 +16,11 @@ namespace Shop.DomainEvents.Sample.Infrastructure
             //     await mediator.Publish(domainEvent);
             // });
 
-            entity.ClearDomainEvents();
-
             foreach (var domainEvent in domainEvents)  
                 await mediator.Publish(domainEvent);
 
+            entity.ClearDomainEvents();
+            
             await Task.WhenAll();
         }
     }
